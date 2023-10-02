@@ -1,0 +1,25 @@
+server:
+  port: 20330
+
+spring:
+  application.name: documents-service
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: angularpay
+      username: service_account
+      password: service_account_password
+      authentication-database: angularpay
+  servlet:
+    multipart:
+      max-file-size: 512KB
+      max-request-size: 512KB
+
+angularpay:
+  documentsRoot: /angularpay/documents
+  pageSize: 10
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 10000
